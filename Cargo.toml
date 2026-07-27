@@ -1,0 +1,22 @@
+[package]
+name = "context-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Niklas Marder"]
+description = "Split codebases into LLM-friendly context windows"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/niklasmarderx/context-rs"
+homepage = "https://github.com/niklasmarderx/context-rs"
+keywords = ["llm", "context", "tokenizer", "codebase", "ai"]
+categories = ["text-processing", "development-tools"]
+readme = "README.md"
+
+[dependencies]
+tiktoken-rs = "0.5"
+ignore = "0.4"
+walkdir = "2"
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+
+[dev-dependencies]
+tempfile = "3"

@@ -158,23 +158,11 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1d07550c9036bf2ae0c684c4297d503f838287c83c53686d05370d0e139ae570"
 
 [[package]]
-name = "context-rs"
-version = "0.1.0"
-dependencies = [
- "ignore",
- "serde",
- "tempfile",
- "thiserror",
- "tiktoken-rs",
- "walkdir",
-]
-
-[[package]]
 name = "context-rs-cli"
 version = "0.1.0"
 dependencies = [
  "clap",
- "context-rs",
+ "llm-window",
  "serde_json",
 ]
 
@@ -304,6 +292,18 @@ name = "linux-raw-sys"
 version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53"
+
+[[package]]
+name = "llm-window"
+version = "0.1.0"
+dependencies = [
+ "ignore",
+ "serde",
+ "tempfile",
+ "thiserror",
+ "tiktoken-rs",
+ "walkdir",
+]
 
 [[package]]
 name = "lock_api"

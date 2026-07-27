@@ -1,5 +1,5 @@
 use clap::Parser;
-use context_rs::{ContextSplitter, SplitterConfig, WalkerConfig};
+use llm_window::{ContextSplitter, SplitterConfig, WalkerConfig};
 use std::path::PathBuf;
 
 #[derive(Parser)]

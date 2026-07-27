@@ -1,0 +1,19 @@
+[package]
+name = "context-rs-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["Niklas Marder"]
+description = "CLI for context-rs — split a codebase into LLM-friendly context windows"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/niklasmarderx/context-rs"
+homepage = "https://github.com/niklasmarderx/context-rs"
+default-run = "context-rs"
+
+[[bin]]
+name = "context-rs"
+path = "src/main.rs"
+
+[dependencies]
+context-rs = { path = "../context-rs" }
+clap = { version = "4", features = ["derive"] }
+serde_json = "1"

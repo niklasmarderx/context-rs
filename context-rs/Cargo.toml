@@ -12,7 +12,7 @@ categories = ["text-processing", "development-tools"]
 readme = "../../README.md"
 
 [dependencies]
-tiktoken-rs = "0.5"
+tiktoken-rs = "0.12"
 ignore = "0.4"
 walkdir = "2"
 serde = { version = "1", features = ["derive"] }
